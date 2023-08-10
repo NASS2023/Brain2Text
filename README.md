@@ -66,3 +66,14 @@ We have performed Independent Component Analysis on these waves and after certai
 
 ![image](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/img.jpg)
 
+Our aim here is to extract information from these images and generate the corresponding story. Although story generation is not the aim of this project but due to lack of dataset, we had to narrow down our task. However, this projects makes a strong statement that it is possible to generate text from brainwaves. 
+
+Now, the architecture has three stages:
+
+# MEG2VEC
+
+We have used the CNN architecture present in oneDNN library to extract features from the MEG images. 
+
+# TEXT2VEC:
+
+# BRAIN2TEXT:
