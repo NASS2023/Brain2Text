@@ -1,6 +1,6 @@
 # Brain2Text: An AI Model That Maps Brainwaves to Text
 
-![](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/brain (new).gif)
+![](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/brain(new).gif)
 
 # Abstract:
 In today's rapidly evolving technological landscape, there exists a profound need to bridge the communication gap for indivisuals who face speech impediments. There are many people in the society who struggle to communicate, face challenges in expressing thoughts, and finds it difficult to engage in conversion due to aphasia. Our project is a contribution to help these people have communication with ease. 
