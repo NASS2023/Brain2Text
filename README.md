@@ -64,7 +64,7 @@ This dataset has been curated from an experiment on 27 subjects. Each subject ha
 
 We have performed certain preprocessing and visualizations and have obtained the below waves. Under preprocessing we have performed:
 
-1. Filtering: We have taken frequencies between 0.5Hz to 30Hz. This is in order to eleminate Gamma Waves.
+1. Filtering: We have taken frequencies between 0.5Hz to 30Hz. This is in order to eleminate Gamma Waves since Gamma Waves is not associated with thought processes.
 
 ![image](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/gammawaves.jpg)
 
