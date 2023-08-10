@@ -84,7 +84,9 @@ Now, the architecture has three stages:
 
 # MEG2VEC: Generating vectors from MEG Images
 
-This is the phase 1 of the task. We have used the CNN architecture present in oneDNN library to extract features from the MEG images. 
+This is the phase 1 of the task. We have used the CNN architecture present in oneDNN library to extract features from the MEG images.
+
+![image](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/onednn.jpg)
 
 ![image](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/cnn2.png)
 
@@ -151,21 +153,19 @@ Rouge Score lies between 0 and 1. The closer the value to 1, more is the similar
 
 # Future Prospect:
 
+The central idea of our project is to create a wearable device that resembles headphones. The core functionality of the device involves reading brainwave, converting them into text and using a voice assistant to read tho text out. Developing the hardware for such a wearable device involves several challenges. It requires expertise in sensor technology, electronics, and miniaturization. Partnering with companies experienced in hardware architecture and wearable technology can accelerate the development process. These companies can bring their knowledge of designing compact and functional hardware components to enhance this project. 
 
+To ensure the medical effectiveness and safety of your device, collaboration with medical professionals is crucial. Neuroscientists, psychiatrists, and psychologists can provide guidance on the interpretation of brainwave data and its relevance to mental health. Their expertise can help you refine your device's algorithms and improve its accuracy. The potential impact goes beyond medical research. If successful, the brainwave-reading wearable could have applications in various fields such as education, communication, and assistive technology. For instance, it could aid individuals with disabilities who may have limited means of communication.
+
+# Limitation:
+
+1. Due to super time constraint, we are unable to build a tokenizer of our own. Although, we have a novel decoder architecture, but the architecture is using pre-trained embeddings from Roberta. Due to this reason, our outputs are specific to Roberta style of embeddings which is not always meaningful to the end user. To resolve this issue, we have to build a tokenizer of our own.
+
+2. Since we have brainwaves corresponding to long stories, each datapoint is huge in length. Models find it difficult to learn from long datapoints. Rather, if we had conversational data and their corresponding waves, then model learning would have been far better since the datapoints are shorter in length.
 
 # My Learning from oneAPI:
 
 ✅ 
-
-✅
-
-✅
-
-✅
-
-✅
-
-✅
 
 ✅
 
