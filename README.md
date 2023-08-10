@@ -88,6 +88,9 @@ This is the phase 1 of the task. We have used the CNN architecture present in on
 
 ![image](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/onednn.jpg)
 
+oneDNN is an Intel oneAPI Deep Neural Network Library which provides us with implementation of Deep Learning Blocks. We used this framework to improve the performance of our CNN model and in turn extract the embeddings corresponding to the brain meg signals. oneDNN gives us the opportunity to run our code on CPU or GPU as per our convinience which greatly enhanced our training speed.
+
+
 ![image](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/cnn2.png)
 
 The architecture:
