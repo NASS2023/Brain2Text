@@ -26,7 +26,7 @@ https://hal.science/hal-03808317/file/BrainMagick_Neurips%20%283%29.pdf
 
 They have simply found out a correlation between audio waves and brainwaves.
 
-# Our Contributions:
+# Our Contributions to the Society:
 
 ✅ A contribution to speech impaired people of the society: This project provides a groundbreaking solution that leverage deep learning techniques to to bridge the communication gap for individuals with speed impediments and providing them an alternative means of expressing themselves. This project could ease the frustration and emotional burden often experienced by speech impaired individuals. This will enable people suffering from paralysis, aphasia or any speech impediments to have communication with ease.
 
@@ -58,7 +58,7 @@ Lets begin with the dataset. We have obtained the dataset from:
 
 https://osf.io/ag3kj/
 
-This dataset has been curated from an experiment on 27 subjects. Each subject has 2 sessions. In each session subjects were made to listen to 4 different stories. While the subjects were listening to the stories and thinking about the stories, their MEG signals were recorded. This implies that the MEG signals corresponds to the stories. There was 20 sensors applied on the subjects, hence 20 MEG signals were generated corresponding to each story. A sample from the dataset:
+This dataset has been curated from an experiment on 27 subjects. Each subject has 2 sessions. In each session, subjects were made to listen to 4 different stories. While the subjects were listening and thinking about the stories, their MEG signals were recorded. This implies that the MEG signals corresponds to the stories. There was 20 sensors applied on the subjects, hence 20 MEG signals were generated corresponding to each story. A sample from the dataset:
 
 ![image](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/denoise.jpg)
 
@@ -66,14 +66,21 @@ We have performed Independent Component Analysis on these waves and after certai
 
 ![image](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/img.jpg)
 
-Our aim here is to extract information from these images and generate the corresponding story. Although story generation is not the aim of this project but due to lack of dataset, we had to narrow down our task. However, this projects makes a strong statement that it is possible to generate text from brainwaves. 
+Our aim here is to extract information from these images and generate the corresponding story. Although story generation is not the aim of this project but due to lack of dataset, we had to narrow down our task. However, this projects makes a strong statement that it is possible to generate text from brainwaves. Hence, the input to the architecture is a MEG images and output of the architecture is a story.
 
 Now, the architecture has three stages:
 
-# MEG2VEC
+# MEG2VEC: Generating vectors from MEG Images
 
 We have used the CNN architecture present in oneDNN library to extract features from the MEG images. 
 
-# TEXT2VEC:
+![image](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/cnn2.png)
+
+# TEXT2VEC: Generating vectors from text stories
+
+We have used pre-trained model Roberta for encoding our texts into embeddings and again decoding the embeddings to get the text back.
+
+![image](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/Screenshot%202023-08-10%20221705.png)
 
 # BRAIN2TEXT:
+
