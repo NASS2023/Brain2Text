@@ -84,18 +84,26 @@ Now, the architecture has three stages:
 
 # MEG2VEC: Generating vectors from MEG Images
 
-We have used the CNN architecture present in oneDNN library to extract features from the MEG images. 
+This is the phase 1 of the task. We have used the CNN architecture present in oneDNN library to extract features from the MEG images. 
 
 ![image](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/cnn2.png)
 
-The architecture: 
+The architecture:
+
 --> Convolutional 2D (3,32)
+
 --> Batch Normalization + ReLu + Dropout (Rate=0.1)
+
 --> Convolutional 2C (32,60)
+
 --> Batch Normalization + ReLu + Dropout (Rate=0.1).
+
 --> Max Pooling
+
 --> Linear Layer (16 * 144 * 144,512)
+
 --> Linear Layer (512)
+
 
 ![image](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/cnn_arch.jpg)
 
@@ -105,9 +113,60 @@ With this architecture, we have classified the brainwaves to its respective stor
 
 # TEXT2VEC: Generating vectors from text stories
 
-We have used pre-trained model Roberta for encoding our texts into embeddings and again decoding the embeddings to get the text back.
+This is the phase 2 of the task. We have used pre-trained Roberta-Large for encoding and decoding.
 
-![image](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/Screenshot%202023-08-10%20221705.png)
+Steps to encode:
+
+1. Tokenize the data
+
+2. Pass the tokenized data to the model
+
+3. Extract the last hidden layer output, this is our embedding of the tokens
+
+4. Average pooling on embeddings
+
+5. Mapping the index ids of the tokens with the embedded vector
+
+6. Create a dictionary having tokens and its corresponding embedding
+
+![image](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/textvec.jpg)
 
 # BRAIN2TEXT:
 
+This is phase 3 of the task. Here we take the outputs of the previous two phases and try to set up a mapping between them. We have build a novel decoder architecture for the text generation purpose. Our novel architecture is as follows:
+
+![image](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/decoder.jpg)
+
+This is the general architecture of a decoder:
+
+![image](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/decoderarch.jpg)
+
+To this decoder architecture, we give the wave embeddings as input and the text embeddings are the output. The model has been able to generate stories with more than 58% F-Measure (Rouge 1). The Rouge Scores are as follows:
+
+![image](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/rouge.jpg)
+
+Rouge Score lies between 0 and 1. The closer the value to 1, more is the similarity between actual and generated sentences. Rouge-1 considers 1-gram, Rouge-2 considers 2-gram and Rouge-L considers the longest common subsequence. The formula are as follow:
+
+![image](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/rougeformula.jpg)
+
+# Future Prospect:
+
+
+
+# My Learning from oneAPI:
+
+✅ 
+
+✅
+
+✅
+
+✅
+
+✅
+
+✅
+
+✅
+
+✅
