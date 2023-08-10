@@ -62,7 +62,19 @@ This dataset has been curated from an experiment on 27 subjects. Each subject ha
 
 ![image](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/denoise.jpg)
 
-We have performed Independent Component Analysis on these waves and after certain preprocessing and visualizations we have obtained:
+We have performed certain preprocessing and visualizations and have obtained the below waves. Under preprocessing we have performed:
+
+1. Filtering: We have taken frequencies between 0.5Hz to 30Hz. This is in order to eleminate Gamma Waves.
+
+![image](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/gammawaves.jpg)
+
+2. Independent Component Analysis: Independent component analysis (ICA) is a statistical technique used for signal processing to seperate multivariate signal into additive and independent components. The technique is an effective method for removing artifacts and separating sources of the brain signals from these recordings.
+
+3. Cropping
+
+4. Resizing
+
+5. Normalization
 
 ![image](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/img.jpg)
 
@@ -75,6 +87,21 @@ Now, the architecture has three stages:
 We have used the CNN architecture present in oneDNN library to extract features from the MEG images. 
 
 ![image](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/cnn2.png)
+
+The architecture: 
+--> Convolutional 2D (3,32)
+--> Batch Normalization + ReLu + Dropout (Rate=0.1)
+--> Convolutional 2C (32,60)
+--> Batch Normalization + ReLu + Dropout (Rate=0.1).
+--> Max Pooling
+--> Linear Layer (16 * 144 * 144,512)
+--> Linear Layer (512)
+
+![image](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/cnn_arch.jpg)
+
+With this architecture, we have classified the brainwaves to its respective stories. In this phase, the classification accuracy is:
+
+![image](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/cnn_results.jpg)
 
 # TEXT2VEC: Generating vectors from text stories
 
