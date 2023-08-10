@@ -7,6 +7,8 @@ In today's rapidly evolving technological landscape, there exists a profound nee
 
 It is well established that as a person thinks then corresponding to their thoughts, specific brainwaves are generated. These brainwaves follow a particular pattern and they carry an essence of the thoughts. This phenomenon has inspired us to extract and decipher these brainwaves in order to  decode the intended message. Hence this project offers a convergence of neuroscience and aritificial intelligence in order to bridge the communication gap.
 
+![image](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/waves.jpg)
+
 The fundamental ambition of this project is to harness the capabilities of AI techniques to empower individuals with speech impediments to communicate effortlessly. The ultimate goal is to provide these people with some means of communication. 
 
 The project is divided into three portions: MEG2VEC, TEXT2VEC and BRAIN2TEXT. MEG2VEC corresponds to converting Magnetoencephalography (MEG) signals to a vectorized form. TEXT2VEC corresponds to converting text to vectorized form. BRAIN2TEXT corresponds to the mapping of MEG vectors to text vectors. To solve these three steps, we have used CNN from the oneDNN library for MEG2VEC, Roberta for TEXT2VEC and a novel decoder architecture for BRAIN2TEXT.
@@ -59,3 +61,8 @@ https://osf.io/ag3kj/
 This dataset has been curated from an experiment on 27 subjects. Each subject has 2 sessions. In each session subjects were made to listen to 4 different stories. While the subjects were listening to the stories and thinking about the stories, their MEG signals were recorded. This implies that the MEG signals corresponds to the stories. There was 20 sensors applied on the subjects, hence 20 MEG signals were generated corresponding to each story. A sample from the dataset:
 
 ![image](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/denoise.jpg)
+
+We have performed Independent Component Analysis on these waves and after certain preprocessing and visualizations we have obtained:
+
+![image](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/img.jpg)
+
