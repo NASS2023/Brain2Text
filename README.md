@@ -2,7 +2,7 @@
 
 ![](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/brain(new).gif)
 
-# Abstract: ![image](https://github.com/NASS2023/Brain2Text/blob/main/IMAGES/geometric.png)
+# Abstract:
 In today's rapidly evolving technological landscape, there exists a profound need to bridge the communication gap for indivisuals who face speech impediments. There are many people in the society who struggle to communicate, face challenges in expressing thoughts, and finds it difficult to engage in conversion due to aphasia. Our project is a contribution to help these people have communication with ease. 
 
 It is well established that as a person thinks then corresponding to their thoughts, specific brainwaves are generated. These brainwaves follow a particular pattern and they carry an essence of the thoughts. This phenomenon has inspired us to extract and decipher these brainwaves in order to  decode the intended message. Hence this project offers a convergence of neuroscience and aritificial intelligence in order to bridge the communication gap.
