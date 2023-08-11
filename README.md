@@ -170,6 +170,19 @@ To ensure the medical effectiveness and safety of our device, collaboration with
 
 2. Since we have brainwaves corresponding to long stories, each datapoint is huge in length. Models find it difficult to learn from datapoints having long seperated dependencies. Rather, if we had conversational data and their corresponding waves, then model learning would have been far better since the datapoints are shorter in length.
 
+# Steps for improvement:
+
+1. **Curating a proper dataset**: The model that performs thoughts extraction from brainwaves will perform best if trained with conversational data and their corresponding brainwaves. This is because conversational data are shorter in length and hence shorter waves would be generated. Lerning patterns from shorter waves and shorter texts would be much easier to the model.
+
+2. **Proper Data Type**: Instead of doing this task based on MEG images, we can obtain better performance if performed on MEG readings. This is because, we definitely loose some amount of information while extracting features from images. Hence, having the MEG reading would perform better since they are raw numerical data. There would be no need to perform information extraction.
+
+3. **Medical Guidance**: Collaborating with doctors and medical researchers is of utmost importance for the success of this project.
+
+4. **Segmentation**: In case we have to deal with MEG images only, we can have an additional step in the preprocessing of images i.e., segmentation. Instead of having 20 MEG waves in one image, we can segment the image into 20 parts, each part having an indivisual image. This step would help CNN focus on indivisual waves and extract better information with minimal loss. Due to time contraints, we unable to perform this step but we would definitely do it in the future.
+
+5. **Tokenizer**: Having a corpus of our own and developing a tokenizer from scratch is very important for smooth encoding and perfect decoding of texts. Again due to time constraints, we were unable to perform this step.
+
+
 # My Learning from oneAPI:
 
 ✅ Using IDC (Intel Dev Cloud): This platform has provided us with cloud which we can easily connect with our localhost and use the GPUs present in the servers. This has helped us train our models really fast hence saving our time and allowing us to focus more on improving our work.
