@@ -192,3 +192,8 @@ To ensure the medical effectiveness and safety of our device, collaboration with
 ✅ Using oneDNN: This library contains optimised versions of neural networks like ANN, RNN and CNN. Since we had to extract features from images, we have used the CNN architecture supported by this library. This has helped us train our models really fast hence reducing time complexity of the task.
 
 ✅ Using DevMesh: This is a platform that provides us with a space to showcase our work and share our work with many other developers present in the network. This helps us connect with other developers, learn from them and expand our networking.
+
+# Presentation Video:
+
+https://drive.google.com/file/d/1-9TyYi_Dqnh6FamdC40O3UBnnnhfQ-3A/view
+
