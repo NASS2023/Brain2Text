@@ -18,6 +18,7 @@ The project is divided into three portions: MEG2VEC, TEXT2VEC and BRAIN2TEXT. ME
 University of California, San Francisco has started this study and their paper has been published in The New England Journal of Medicine: 
 
 https://developer.nvidia.com/blog/transforming-brain-waves-into-words-with-ai/
+
 https://www.nejm.org/doi/full/10.1056/NEJMoa2027540?query=featured_home
 
 Recently Meta has also started working on this and a very recent paper from them is: 
