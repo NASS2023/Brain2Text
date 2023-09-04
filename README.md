@@ -1,4 +1,4 @@
-# Brain2Text: An AI model that maps brainwaves to text
+# Though2Text: An AI model that maps brainwaves to text
 
 https://github.com/NASS2023/Brain2Text/assets/141930141/6b6b4c24-a5f9-4f3a-979e-75e20dcd8a4d
 
